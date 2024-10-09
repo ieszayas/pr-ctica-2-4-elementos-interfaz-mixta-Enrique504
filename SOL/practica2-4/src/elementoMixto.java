@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -29,6 +32,11 @@ public class elementoMixto extends javax.swing.JFrame {
         buttonGroup2.add(this.Opcion5Copia);
         buttonGroup2.add(this.Opcion6Copia);
         
+        check.setVisible(false);
+        checkCopia.setVisible(false);
+        txtCon.setVisible(false);
+        txtConCopia.setVisible(false);
+        
         
         
         
@@ -58,11 +66,11 @@ public class elementoMixto extends javax.swing.JFrame {
         combobox = new javax.swing.JComboBox<>();
         spinner = new javax.swing.JSpinner();
         correo = new javax.swing.JLabel();
-        botonValidar = new javax.swing.JToggleButton();
+        boton1 = new javax.swing.JToggleButton();
         slider = new javax.swing.JSlider();
         spinnerCopia = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
-        jToggleButton2 = new javax.swing.JToggleButton();
+        boton1Copia = new javax.swing.JToggleButton();
         sliderCopia = new javax.swing.JSlider();
         textoCorreoCopia = new javax.swing.JTextField();
         primerTextoCopia = new javax.swing.JTextField();
@@ -74,6 +82,10 @@ public class elementoMixto extends javax.swing.JFrame {
         Opcion6Copia = new javax.swing.JCheckBox();
         comboboxCopia = new javax.swing.JComboBox<>();
         jSeparator1 = new javax.swing.JSeparator();
+        check = new javax.swing.JTextField();
+        txtCon = new javax.swing.JTextField();
+        checkCopia = new javax.swing.JTextField();
+        txtConCopia = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -169,7 +181,12 @@ public class elementoMixto extends javax.swing.JFrame {
 
         correo.setText("Correo");
 
-        botonValidar.setIcon(new javax.swing.ImageIcon("C:\\Users\\DAM2_11\\Documents\\GitHub\\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\\b_off.png")); // NOI18N
+        boton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Enri\\Documents\\GitHub\\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\\SOL\\practica2-4\\img\\b_off.png")); // NOI18N
+        boton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton1ActionPerformed(evt);
+            }
+        });
 
         slider.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -182,8 +199,13 @@ public class elementoMixto extends javax.swing.JFrame {
         jLabel2.setText("Correo");
         jLabel2.setEnabled(false);
 
-        jToggleButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\DAM2_11\\Documents\\GitHub\\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\\b_off.png")); // NOI18N
-        jToggleButton2.setEnabled(false);
+        boton1Copia.setIcon(new javax.swing.ImageIcon("C:\\Users\\Enri\\Documents\\GitHub\\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\\SOL\\practica2-4\\img\\b_off.png")); // NOI18N
+        boton1Copia.setEnabled(false);
+        boton1Copia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton1CopiaActionPerformed(evt);
+            }
+        });
 
         sliderCopia.setEnabled(false);
         sliderCopia.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -247,65 +269,88 @@ public class elementoMixto extends javax.swing.JFrame {
             }
         });
 
+        checkCopia.setEnabled(false);
+
+        txtConCopia.setEnabled(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Opcion3)
-                            .addComponent(Opcion1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Opcion2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Opcion1Copia, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Opcion2Copia, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Opcion3Copia))
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Opcion5)
-                            .addComponent(Opcion5Copia)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(textoCorreoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(Opcion4)
-                                        .addComponent(Opcion6)
-                                        .addComponent(Opcion6Copia)
-                                        .addComponent(Opcion4Copia))
-                                    .addGap(52, 52, 52)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(primerTextoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(primerTexto, javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(spinnerCopia, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
-                                                .addComponent(spinner, javax.swing.GroupLayout.Alignment.LEADING))
-                                            .addComponent(combobox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(comboboxCopia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(textoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(botonValidar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(79, 79, 79))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(sliderCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(71, 71, 71))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(slider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26))))
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jSeparator1))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(76, 76, 76)
+                .addComponent(txtCon, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(txtConCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(Opcion3)
+                                    .addComponent(Opcion1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Opcion2, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Opcion1Copia, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Opcion2Copia, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Opcion3Copia))
+                                .addGap(30, 30, 30)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Opcion5)
+                                    .addComponent(Opcion5Copia)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(textoCorreoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(Opcion4)
+                                                .addComponent(Opcion6)
+                                                .addComponent(Opcion6Copia)
+                                                .addComponent(Opcion4Copia))
+                                            .addGap(52, 52, 52)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(primerTextoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                        .addComponent(primerTexto, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(spinnerCopia, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
+                                                        .addComponent(spinner, javax.swing.GroupLayout.Alignment.LEADING))
+                                                    .addComponent(combobox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(comboboxCopia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(textoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(39, 39, 39)
+                                .addComponent(check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(79, 79, 79))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(sliderCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(31, 31, 31))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(slider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(26, 26, 26))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(boton1Copia, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(71, 71, 71))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(checkCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(182, 182, 182))))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -336,21 +381,24 @@ public class elementoMixto extends javax.swing.JFrame {
                             .addComponent(combobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(102, 102, 102)
-                        .addComponent(botonValidar)))
+                        .addComponent(boton1)))
                 .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
+                    .addComponent(textoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(80, 80, 80)
+                .addComponent(txtCon, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(123, 123, 123)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Opcion1Copia)
+                    .addComponent(Opcion4Copia)
+                    .addComponent(primerTextoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sliderCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Opcion1Copia)
-                            .addComponent(Opcion4Copia)
-                            .addComponent(primerTextoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sliderCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -361,13 +409,19 @@ public class elementoMixto extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Opcion3Copia)
                             .addComponent(Opcion6Copia)
-                            .addComponent(comboboxCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jToggleButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                            .addComponent(comboboxCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(boton1Copia, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoCorreoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(60, 60, 60))
+                    .addComponent(textoCorreoCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkCopia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txtConCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
         );
 
         pack();
@@ -451,6 +505,7 @@ public class elementoMixto extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.textoCorreoCopia.setText(this.textoCorreo.getText());
         
+        
     }//GEN-LAST:event_textoCorreoKeyReleased
 
     private void primerTextoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_primerTextoKeyReleased
@@ -474,6 +529,25 @@ public class elementoMixto extends javax.swing.JFrame {
     private void sliderCopiaStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderCopiaStateChanged
         // TODO add your handling code here:
     }//GEN-LAST:event_sliderCopiaStateChanged
+
+    private void boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1ActionPerformed
+        // TODO add your handling code here:
+        this.boton1Copia.setSelected(this.boton1.isSelected());
+         ImageIcon activado =new ImageIcon ("./img/b_on.png");
+         ImageIcon desactivado =new ImageIcon ("./img/b_off.png");
+
+          if (boton1.isSelected()){
+              boton1.setIcon(activado);
+              boton1Copia.setIcon(activado);
+          }else{
+              boton1.setIcon(desactivado);
+              boton1Copia.setIcon(desactivado);
+          }
+    }//GEN-LAST:event_boton1ActionPerformed
+
+    private void boton1CopiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1CopiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton1CopiaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -523,16 +597,18 @@ public class elementoMixto extends javax.swing.JFrame {
     private javax.swing.JCheckBox Opcion5Copia;
     private javax.swing.JCheckBox Opcion6;
     private javax.swing.JCheckBox Opcion6Copia;
-    private javax.swing.JToggleButton botonValidar;
+    private javax.swing.JToggleButton boton1;
+    private javax.swing.JToggleButton boton1Copia;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JTextField check;
+    private javax.swing.JTextField checkCopia;
     private javax.swing.JComboBox<String> combobox;
     private javax.swing.JComboBox<String> comboboxCopia;
     private javax.swing.JLabel correo;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JTextField primerTexto;
     private javax.swing.JTextField primerTextoCopia;
     private javax.swing.JSlider slider;
@@ -541,5 +617,7 @@ public class elementoMixto extends javax.swing.JFrame {
     private javax.swing.JSpinner spinnerCopia;
     private javax.swing.JTextField textoCorreo;
     private javax.swing.JTextField textoCorreoCopia;
+    private javax.swing.JTextField txtCon;
+    private javax.swing.JTextField txtConCopia;
     // End of variables declaration//GEN-END:variables
 }
