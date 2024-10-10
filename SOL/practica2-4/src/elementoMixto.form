@@ -100,7 +100,12 @@
                   <Component id="jLabel2" min="-2" pref="81" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="imagenCheck" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="42" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
@@ -117,14 +122,9 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="boton1" min="-2" pref="100" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="imagenCheck" min="-2" pref="75" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -147,41 +147,36 @@
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="Opcion4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Opcion1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="primerTexto" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="slider" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Opcion2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Opcion5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="spinner" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Opcion3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Opcion6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="combobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Opcion4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Opcion1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
-                      <Component id="boton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="primerTexto" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="slider" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Opcion2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Opcion5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="spinner" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Opcion3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Opcion6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="combobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="boton1" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -216,7 +211,7 @@
                           <Component id="Opcion6Copia" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="comboboxCopia" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="textoCorreoCopia" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
@@ -329,7 +324,7 @@
     <Component class="javax.swing.JToggleButton" name="boton1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Enri\Documents\GitHub\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\SOL\practica2-4\img\b_off.png"/>
+          <Image iconType="2" name="C:\Users\DAM2_11\Documents\GitHub\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\SOL\practica2-4\img\b_off.png"/>
         </Property>
       </Properties>
       <Events>
@@ -355,7 +350,7 @@
     <Component class="javax.swing.JToggleButton" name="boton1Copia">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Enri\Documents\GitHub\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\SOL\practica2-4\img\b_off.png"/>
+          <Image iconType="2" name="C:\Users\DAM2_11\Documents\GitHub\pr-ctica-2-4-elementos-interfaz-mixta-Enrique504\SOL\practica2-4\img\b_off.png"/>
         </Property>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
